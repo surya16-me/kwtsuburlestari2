@@ -163,7 +163,7 @@ button {
   background-color: var(--btn-hover-color);
 }
 .view_more_btn {
-  width: 200px;
+  width: 220px;
   height: 55px;
   display: flex;
   align-items: center;
@@ -525,8 +525,8 @@ footer {
     font-size: 35px;
   }
   .view_more_btn {
-    width: 140px;
-    height: 55px;
+    width: 180px;
+    height: 50px;
     font-size: 13.5px;
     margin-right: 1rem;
   }
