@@ -16,8 +16,8 @@
 
 /* ==== CSS VARIABLES ==== */
 :root {
-  --primary-color: #425F57;
-  --link-color: #425F57;
+  --primary-color: #285430;
+  --link-color: #285430;
   --btn-hover-color: #749F82;
   --lg-heading: #161c2d;
   --text-content: #869ab8;
@@ -462,6 +462,137 @@ footer {
   color:#fff;
 }
 
+.toko .container{
+  width: 100%;
+  margin: 0 auto;
+  padding: 5rem 2rem;
+  text-align: center;
+  background-color: #5F8D4E;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: white;
+}
+
+.toko .container .social-icon-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap:1rem;
+}
+
+.toko .container .social-icon-container .social{
+  text-align: center;
+  padding: 5rem 3rem;
+  
+}
+
+.toko .container .social-icon-container .social img{
+  height: 9rem;
+}
+
+.contact .container{
+  width: 100%;
+  background: #fff;
+  padding: 20px 60px 30px 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.contact .container .content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contact .container .content .left-side{
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  position: relative;
+}
+.contact .content .left-side::before{
+  content: '';
+  position: absolute;
+  height: 70%;
+  width: 2px;
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #afafb6;
+}
+.contact .content .left-side .details{
+  margin: 14px;
+  text-align: center;
+}
+.contact .content .left-side .details i{
+  font-size: 30px;
+  color: #285430;
+  margin-bottom: 10px;
+}
+.contact .content .left-side .details .topic{
+  font-size: 18px;
+  font-weight: 500;
+}
+.contact .content .left-side .details .text-one,
+.contact .content .left-side .details .text-two{
+  font-size: 14px;
+  color: #afafb6;
+}
+
+
+.contact .container .content .right-side{
+  width: 75%;
+  margin-left: 75px;
+}
+.contact .content .right-side .topic-text{
+  font-size: 23px;
+  font-weight: 600;
+  color: #285430;
+}
+.contact .right-side .input-box{
+  height: 50px;
+  width: 100%;
+  margin: 12px 0;
+}
+.contact .right-side .input-box input,
+.contact .right-side .input-box textarea{
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: #F0F1F8;
+  border-radius: 6px;
+  padding: 0 15px;
+  resize: none;
+}
+.contact .right-side .message-box{
+  min-height: 110px;
+}
+.contact .right-side .input-box textarea{
+  padding-top: 6px;
+}
+.contact .right-side .button{
+  display: inline-block;
+  margin-top: 12px;
+}
+.contact .right-side .button input[type="button"]{
+  color: #fff;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: #5F8D4E;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.contact .button input[type="button"]:hover{
+  background: #285430;
+}
+
+
+
 /* ==== MEDIA QURIES FOR RESPONSIVE DESIGN ==== */
 @media screen and (min-width: 768px) {
   .toggle_btn {
@@ -541,6 +672,21 @@ footer {
     padding: 15px;
     font-size: 10px;
   }
+  .toko .container .social-icon-container .social{
+    text-align: center;
+    padding: 2rem 1rem;
+    
+  }
+
+  .toko .container .social-icon-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap:1rem;
+  }
+
+  .toko .container .social-icon-container .social img{
+    height: 5rem;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -592,12 +738,49 @@ footer {
     padding: 18px;
     font-size: 13px;
   }
+  .toko .container .social-icon-container .social{
+    text-align: center;
+    padding: 2rem 1rem;
+    
+  }
+
+  .toko .container .social-icon-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap:1rem;
+  }
+
+  .toko .container .social-icon-container .social img{
+    height: 5rem;
+  }
+  footer .menu li a{
+    font-size: 0.5em;
+  }
 }
 
 @media screen and (max-width: 576px){
   .slides .navigation .prev, .slides .navigation .next{
     padding: 12px;
     font-size: 7px;
+  }
+  .toko .container .social-icon-container .social{
+    text-align: center;
+    padding: 2rem 1rem;
+    
+  }
+
+  .toko .container .social-icon-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap:1rem;
+  }
+
+
+  .toko .container .social-icon-container .social img{
+    height: 5rem;
+  }
+  footer .menu li a{
+    font-size: 0.5em;
   }
 }
 
@@ -606,4 +789,125 @@ footer {
     padding: 9px;
     font-size: 4px;
   }
+  .toko .container .social-icon-container .social{
+    text-align: center;
+    padding: 1rem;
+    
+  }
+
+  .toko .container .social-icon-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap:1rem;
+  }
+
+
+  .toko .container .social-icon-container .social img{
+    height: 3rem;
+  }
+
+  footer .menu li a{
+    font-size: 0.5em;
+  }
+}
+
+@media (max-width: 950px) {
+  .contact .container{
+    width: 100%;
+    padding: 30px 40px 40px 35px ;
+  }
+  .contact .container .content .right-side{
+   width: 100%;
+   margin-left: 55px;
+}
+  footer .menu li a{
+    font-size: 0.5em;
+  }
+}
+@media (max-width: 820px) {
+  .contact .container{
+    margin: 40px 0;
+    height: 100%;
+  }
+  .contact .container .content{
+    flex-direction: column-reverse;
+  }
+ .contact .container .content .left-side{
+   width: 100%;
+   flex-direction: row;
+   margin-top: 40px;
+   justify-content: center;
+   flex-wrap: wrap;
+ }
+ .contact .container .content .left-side::before{
+   display: none;
+ }
+ .contact .container .content .right-side{
+   width: 100%;
+   margin-left: 0;
+ }
+ footer .menu li a{
+    font-size: 0.5em;
+  }
+}
+
+footer{
+  position: relative;
+  width: 100%;
+  background: #285430;
+  min-height: 100px;
+  padding: 120px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer .social-icon,
+footer .menu{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+footer .social-icon li,
+footer .menu li{
+  list-style: none;
+}
+
+footer .social-icon li a{
+  font-size: 1.5em;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+footer .social-icon li a:hover{
+  transform: translateY(-10px);
+}
+
+footer .menu li a{
+  font-size: 1em;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+}
+
+footer .menu li a:hover{
+  opacity: 1;
+}
+
+footer p{
+  color: #fff;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 1em;
 }

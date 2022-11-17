@@ -20,6 +20,7 @@
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://kit.fontawesome.com/de152fe019.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <!-- ==== HEADER ==== -->
@@ -43,10 +44,10 @@
               <a href="#product" class="nav_menu_link">produk</a>
             </li>
             <li class="nav_menu_item">
-              <a href="#" class="nav_menu_link">toko</a>
+              <a href="#toko" class="nav_menu_link">toko</a>
             </li>
             <li class="nav_menu_item">
-              <a href="#" class="nav_menu_link">kontak kami</a>
+              <a href="#contact" class="nav_menu_link">kontak kami</a>
             </li>
           </ul>
         </div>
@@ -186,7 +187,63 @@
           </div>
       </div>
     </section>
-
+    
+    <section class="toko" id="toko">
+      <div class="container">
+        <h3 class="title">Produk Kami Tersedia di</h3>
+        <div class="social-icon-container">
+          <a href="#" class="social"><img src="img/ic-shopee.png" alt=""></a>
+          <a href="#" class="social"><img src="img/ic-wa.png" alt=""></a>
+          <a href="#" class="social"><img src="img/call.png" alt=""></a>
+        </div>
+      </div>
+      
+    </section>
+    <br>
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="content">
+          <div class="left-side">
+            <div class="address details">
+              <i class="fas fa-map-marker-alt"></i>
+              <div class="topic">Alamat</div>
+              <div class="text-one">Purwajiwa, Batur</div>
+              <div class="text-two">Banjarnegara</div>
+            </div>
+            <div class="phone details">
+              <i class="fas fa-phone-alt"></i>
+              <div class="topic">Kontak</div>
+              <div class="text-one">+0098 9893 5647</div>
+              <div class="text-two">+0096 3434 5678</div>
+            </div>
+            <div class="email details">
+              <i class="fas fa-envelope"></i>
+              <div class="topic">Email</div>
+              <div class="text-one">codinglab@gmail.com</div>
+              <div class="text-two">info.codinglab@gmail.com</div>
+            </div>
+          </div>
+          <div class="right-side">
+            <div class="topic-text">Kirim Pesan</div>
+            <p>Punya pertanyaan tentang produk kami? Isi form pesan dibawah ya!.</p>
+          <form action="#">
+            <div class="input-box">
+              <input type="text" placeholder="Masukkan nama anda">
+            </div>
+            <div class="input-box">
+              <input type="text" placeholder="Masukkan e-mail anda">
+            </div>
+            <div class="input-box message-box">
+              <textarea placeholder="Masukkan pesan anda"></textarea>
+            </div>
+            <div class="button">
+              <input type="button" value="Kirim Sekarang" >
+            </div>
+          </form>
+        </div>
+        </div>
+      </div>
+    </section>
     <!-- <section class="wrapper">
       <div class="container" data-aos="fade-up" data-aos-duration="1000">
         <div class="grid-cols-3">
@@ -267,7 +324,21 @@
       </div>
     </section> -->
 
-    <footer></footer>
+    <footer>
+      <ul class="social-icon">
+        <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+      </ul>
+      <ul class="menu">
+        <li><a href="#home">Beranda</a></li>
+        <li><a href="#product">Produk</a></li>
+        <li><a href="#toko">Toko</a></li>
+        <li><a href="#contact">Kontak Kami</a></li>
+      </ul>
+      <p>©2022 KWT Subur Lestari 2 | All Rights Reserved</p>
+    </footer>
 
     <!-- ==== ANIMATE ON SCROLL JS CDN -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -275,5 +346,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
     <!-- ==== SCRIPT.JS ==== -->
     <script src="./script.js" defer></script>
+    <!-- ION -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   </body>
 </html>
